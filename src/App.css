@@ -1,22 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html, body #root {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  font-size: 14px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: rgb(255, 198, 225);
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.container {
+  margin: 32px auto 32px;
+  width: 400px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.content {
+  background-color: #f8f9fa;
+  width: 100%;
+  margin-top: 50px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.content > p {
+  font-size: 18px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.content button.btn {
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  height: 42px;
+  padding: 0 16px;
+  font-size: 16px;
+  background: #532253;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.content button.btn:hover {
+  background-color: #751e75;
+}
+
+.content button.cancel {
+  background-color: #eb3017;
+}
+
+.content button.cancel:hover {
+  background-color: #881202;
+}
+
+.content form {
+  display: flex;
+  flex-direction: column; 
+}
+
+.content form label {
+  font-size: 14px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.content form label span {
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+}
+
+.content form input {
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
 }

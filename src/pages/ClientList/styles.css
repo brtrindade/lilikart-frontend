@@ -1,0 +1,36 @@
+nav {
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 24px 0;
+}
+
+ul.product-list {
+    width: 100%;
+    list-style: none;
+}
+
+ul.product-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+	margin-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: .025rem .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+ul.product-list li:link {
+    text-decoration: none;
+}
+
+ul.product-list li strong {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+ul.product-list li span {
+    font-size: 14px;
+    color: #999;
+}
